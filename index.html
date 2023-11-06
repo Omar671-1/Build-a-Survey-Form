@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Page </title>
+  <style>
+    /* to css here  */
+  </style>
+</head>
+<body>
+  <h1 id="title">survy-form</h1>
+  
+  <p id="description">Please fill in the the form below and choose an option.</p>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+    
+    <label for="dropdown">Choose an option:</label>
+    <select id="dropdown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    
+    <label>Choose an option:</label>
+    <input type="radio" name="radio-group" value="option1"> Option 1
+    <input type="radio" name="radio-group" value="option2"> Option 2
+    
+    <label>Choose options:</label>
+    <input type="checkbox" name="checkbox-group" value="option1"> Option 1
+    <input type="checkbox" name="checkbox-group" value="option2"> Option 2
+    <input type="checkbox" name="checkbox-group" value="option3"> Option 3
+    
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Please enter your comments"></textarea>
+    
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
